@@ -1,0 +1,14 @@
+-- SEQUENCE: sch2.t4_id_seq
+
+-- DROP SEQUENCE IF EXISTS sch2.t4_id_seq;
+
+CREATE SEQUENCE IF NOT EXISTS sch2.t4_id_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 2147483647
+    CACHE 1
+    OWNED BY t4.id;
+
+ALTER SEQUENCE sch2.t4_id_seq
+    OWNER TO postgres;
